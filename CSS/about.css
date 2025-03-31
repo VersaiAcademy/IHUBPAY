@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* _________add font family___________ */
+
+@font-face{
+    font-family: mytekure;
+    src: url('Font/Tektur/static/Tektur-SemiBold.ttf');
+}
+@font-face{
+    font-family: cinema-sunday;
+    src: url('Font/cinema-sunday/Web-TT/cinema\ sunday.ttf');
+}
+@font-face{
+    font-family: georgi;
+    src: url('Font/georgi/GeorginoDisplay-Regular.ttf');
+}
+
+@font-face{
+    font-family: nba-rachit;
+    src: url('Font/nbarchit/NBArchitektStdNeue-Regular.otf');
+}
+:root {
+    --primary-color: #0082E6;
+    --accent-color: #F7931E;
+    --myBlack:#043448;
+    --darkBlue:#005249 ;
+    --myWhite:#ffffff;
+    --dimWhite:#ada7a7;
+    --bodyColor: #022c43;
+}
+
+
+body {
+    background:  #022c43;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.about-section {
+    text-align: center;
+    padding: 80px 0;
+}
+.about-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 183, 255, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.about-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 183, 255, 0.7);
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00b7ff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #0085cc;
+    box-shadow: 0 0 10px #00b7ff;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00b7ff;
+    margin-bottom: 15px;
+}
+
+
+/* +++++++++++++++Frequently asked question++++++++++++++++ */
+.faq-img{
+    height: calc(400px + 1vw);
+}
+
+.accordion{
+    padding: 10px 0px;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+}
+.accordion-item {
+    background-color:#022c43;
+    border-bottom-color:var(--primary-color);
+}
+
+.accordion-header button{
+    background-color:#022c43;
+    color: var(--myWhite);
+}
+.accordion-body{
+    color:  var(--myWhite);
+}
+
+.accordion-button::after{
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "<i class="fa-solid fa-angle-down"></i>";
+    /* background-image: var(--bs-accordion-btn-icon); */
+    /* background-repeat: no-repeat; */
+    /* background-size: var(--bs-accordion-btn-icon-width); */
+    /* transition: var(--bs-accordion-btn-icon-transition); */
+}
+
+
+
+/*--------------- card-carousel -------------*/
+.awards-pattern{
+    background-image: url('../image/awards_pattern2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(180px + 0.5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: calc(30px + 2vw) 0px;
+}
+.card-carousel{
+    background-color: var(--bodyColor);
+    border: 2px solid var(--primary-color);
+}
+
+.card-carousel{
+    display: flex;
+    justify-content: center;
+}
+.award-title{
+    font-size: calc(16px + 0.1vw);
+    font-weight: 600;
+    color: var(--myWhite);
+}
+.award-desc{
+    margin-top: calc(10px + 0.5vw);
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+    color: #ada7a7;
+    text-align: center;
+}

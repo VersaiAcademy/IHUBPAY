@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* _________add font family___________ */
+
+@font-face{
+    font-family: mytekure;
+    src: url('Font/Tektur/static/Tektur-SemiBold.ttf');
+}
+@font-face{
+    font-family: cinema-sunday;
+    src: url('Font/cinema-sunday/Web-TT/cinema\ sunday.ttf');
+}
+@font-face{
+    font-family: georgi;
+    src: url('Font/georgi/GeorginoDisplay-Regular.ttf');
+}
+
+@font-face{
+    font-family: nba-rachit;
+    src: url('Font/nbarchit/NBArchitektStdNeue-Regular.otf');
+}
+:root {
+    --primary-color: #0082E6;
+    --accent-color: #F7931E;
+    --myBlack:#043448;
+    --darkBlue:#005249 ;
+    --myWhite:#ffffff;
+    --dimWhite:#ada7a7;
+}
+
+body{
+    background-color: #022c43;
+}
+
+/* navbar */
+nav{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #0082E6;
+}
+
+
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
+
+.payment-image{
+    height: calc(500px + 1vw);
+    width: 70%;
+}
+
+.nav-col{
+    color: var(--myWhite);
+}
+
+.nav-item:hover .nav-col{
+    color: var(--accent-color);
+}
+
+
+.login-mybtn{
+    text-decoration: none;
+    color: var(--myWhite);
+    padding: 3px 15px;
+    border: 0.13rem solid var(--myWhite);
+    border-radius: 12px;
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+}
+.login-mybtn:hover{
+    background-color: var(--myWhite);
+    color: var(--accent-color);
+    border: 2px solid var(--myWhite);
+    border-radius: 12px;
+}
+
+.create-mybtn{
+    background-color:var(--primary-color);
+    text-decoration: none;
+    color: var(--myWhite);
+    padding: 3px 15px;
+    border: 0.13rem solid var(--primary-color);
+    border-radius: 12px;
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+}
+.create-mybtn:hover{
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+}
+
+.logo-img{
+    margin-top:calc(10px + 0.5vw);
+    height: calc(50px + 0.5vw);
+}
+
+/* first-section */
+.hero-section {
+    background: #022c43;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.your-trusted{
+    font-size: calc(30px + 5vw);
+    line-height: calc(70px + 0.5vw);
+    text-transform:capitalize;
+    color: var(--myWhite);
+    /* font-family: cinema-sunday; */
+    font-family: georgi;
+
+}
+.your-trusted span{
+    display: inline-block;
+
+}
+.hero-text{
+    margin-top: calc(10px + 0.5vw);
+    font-size: 1.2rem;
+    color: var(--myWhite);
+}
+
+.hero-btn{
+    display: inline-block;
+    margin-top: calc(10px + 0.5vw);
+    text-decoration: none;
+    color: var(--myWhite);
+    padding: 10px 15px;
+    border: 2px solid var(--myWhite);
+    border-radius: 12px;
+    font-size: calc(14px + 0.2vw);
+    font-weight: 500;
+}
+.hero-btn:hover{
+    background-color: var(--accent-color);
+    border: 2px solid var(--primary-color);
+
+}
+.about-ushead{
+    font-size: calc(14px + 0.1vw);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+.about-usdesc{
+    font-size: calc(18px + 0.2vw);
+    font-weight: 700;
+    color: var(--myWhite);
+    
+}
+
+
+.about-description{
+    font-size: calc(14px + 0.1vw);
+    font-weight: 400;
+    color: var(--dimWhite);
+    margin-top: -10px;
+}
+
+
+.atihub{
+    font-size: calc(16px + 0.1vw);
+    font-weight: 600;
+    color: var(--myWhite);
+}
+
+.dynamic-font{
+    font-family: mytekure;
+}
+
+
+/* +++++++++++++++++++++++++++ */
+.main-heading{
+    font-size: calc(30px + 1vw);
+    font-weight: 700;
+    /* text-align: center; */
+    color: var(--myWhite);
+    font-family: georgi;
+    text-transform: capitalize;
+}
+.main-heading:hover {
+    animation: bounce; /* Animate.css predefined animation */
+    animation-duration: 1s;
+}
+
+/* ------------------for both card section-------------------  */
+.card:hover {
+    animation: pulse; /* Animate.css effect */
+    animation-duration: 1s;
+}
+
+    .card-heading{
+        font-size: calc(18px + 0.4vw);
+        text-align: center;
+        color:#00b4d8;
+        font-weight: 600;
+    }
+
+    .card-description{
+        font-size: calc(14px + 0.1vw);
+        color: #ada7a7;
+        font-weight: 400; 
+    }
+
+/* ++++++++++++Why Choose iHubPay?++++++++++++ */
+.first-card{
+    border: 5px solid #00b4d8;
+    background-color: none!important;
+}
+.card-image{
+    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-imagechild{
+    width: 100%;
+    height: calc(150px + 1vw);
+}
+
+.card-description1{
+    font-size: calc(14px + 0.1vw);
+    color: #111;
+    font-weight: 400; 
+}
+
+
+/* ------------Comprehensive Solutions------------- */
+.feature-card {
+    padding: 20px;
+    background: var(--myWhite);
+    border: 2px solid #00b4d8; /* Added white border */
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+        /* background: rgba(0, 183, 255, 0.5); */
+        transform: translateY(-8px);
+        box-shadow: 0 6px 15px rgba(10, 138, 189, 0.7);
+        animation: pulse 1s;
+}
+.feature-card i {
+    font-size: 40px;
+    color: #00b4d8;
+    margin-bottom: 15px;
+}
+/* ++++++++++++++++++track-fast+++++++++++++++++++ */
+.track-fast{
+            background: rgba(0, 0, 0, 0.2);
+    /* background:linear-gradient(to right, rgba(255,0,0,0), rgb(56, 56, 219)); */
+    padding: calc(20px + 0.1vw) 0px;
+}
+.phone-seamless{
+    height: calc(400px + 2vw);
+}
+.phone-seamless:hover{
+    /* background: rgba(255, 255, 255, 0.2); */
+        /* background: rgba(0, 183, 255, 0.5); */
+        transform: translateY(-8px);
+        box-shadow: 0 6px 15px rgba(10, 138, 189, 0.7);
+        animation: pulse 1s;
+}
+.get-onboard{
+    font-size: calc(20px + 0.6vw);
+    font-weight: 600;
+    color: var(--myWhite);
+    text-align: start;
+}
+.get-menu{
+    list-style: none;
+    text-align:start;
+}
+
+.get-menu li{
+    line-height:calc(28px + 0.2vw);
+    color: var(--myWhite);
+}
+
+.get-menu li i{
+    display: inline-block;
+    color:var(--accent-color);
+    margin: 5px;
+    padding: 6px 8px;
+    background-color: var(--myWhite);
+    border-radius: 100%;
+}
+.learn-morebtn{
+    display: inline;
+    line-height: 0px;
+    text-decoration: none;
+    color: var(--myBlack);
+    padding: 12px 15px;
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+    background-color:var(--myWhite);
+    border-radius: 6px;
+}
+.learn-morebtn i{
+    font-size: 12px;
+    padding-left:5px;
+}
+
+
+/* footer */
+.myfooter-container{
+    padding: calc(60px + 1vw) calc(20px + 1vw);
+    border: 2px solid #0082E6;
+    border-radius: 12px;
+}
+.footlogo-img{
+    height: calc(50px + 0.1vw);
+}
+.footlogo-desc{
+    padding-top:calc(20px + 0.5vw);
+    color: var(--myWhite);
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+}
+.footer-heading{
+    color: var(--myWhite);
+    font-size: calc(16px + 0.5vw);
+    font-weight: 600;
+}
+
+
+.foot-menu{
+    list-style: none;
+}
+.foot-menu li{
+    line-height: 28px;
+}
+.foot-menu li a{
+    text-decoration: none;
+    color: var(--myWhite);
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+}
+.copyright-sect{
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.copyright{
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+    color: var(--myWhite);
+}
+.foot-helpline a{
+    text-decoration: none;
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+    color: var(--myWhite);
+   padding-left:calc(10px + 0.5vw);
+}
+.foot-helpline span{
+    font-size: calc(14px + 0.1vw);
+    font-weight: 500;
+    color: var(--myWhite);
+    padding-left:calc(10px + 0.5vw);
+}
+
+
+/* _____________whatsapp btn______________ */
+
+.whats-appbtn{
+    position: fixed;
+    top: 80vh;
+    right: 2%;
+    z-index: 99999999999999;
+}
+
+.whats-appbtn i{
+    font-size: calc(24px + 2vw);
+    color: rgb(33, 236, 33);
+}

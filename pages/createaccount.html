@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | iHubPay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: url('../image/bn.png');
+            background-color: #022c43;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+
+        
+
+        .account-container {
+            max-width: 450px;
+            padding: 30px;
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 183, 255, 0.5);
+            text-align: center;
+        }
+
+        .account-title {
+            font-weight: bold;
+            color: #00b7ff;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            background: #222;
+            border: 1px solid #00b7ff;
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: #aaa;
+        }
+
+        .account-btn {
+            background-color: #00b7ff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .account-btn:hover {
+            background-color: #0085cc;
+            box-shadow: 0 0 10px #00b7ff;
+        }
+
+        .info-text {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .sign-inlogo {
+            padding-top: 20px;
+            height: 80px;
+            padding-left: 10%;
+            filter: brightness(0) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <a href="../index.html"><img src="../image/logo.svg" alt="logo" class="sign-inlogo"></a>
+            </div>
+            <div class="col-6">
+                <div class="account-container">
+                    <h2 class="account-title">Create Your <br> iHubPay Account</h2>
+                    <p>Join the fastest growing payment gateway solution.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Create Password" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Confirm Password" required>
+                        </div>
+                        <button type="submit" class="btn account-btn w-100">Sign Up</button>
+                    </form>
+                    <p class="info-text">By signing up, you agree to our <a href="#">Terms & Conditions</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

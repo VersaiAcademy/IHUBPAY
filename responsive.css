@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #0082E6;
+    --accent-color: #F7931E;
+    --myBlack:#043448;
+    --darkBlue:#005249 ;
+    --myWhite:#ffffff;
+}
+
+
+
+.mytogller{
+    border:2px solid var(--myWhite)!important;
+}
+
+
+
+.mycolumn:hover{
+
+}
