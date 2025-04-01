@@ -27,15 +27,18 @@
     <style>
         /* Background Gradient Fix */
         .features-section {
-            padding: 50px 0;
-            background-size: cover;
-            background-position: center;
+            margin-top: calc(30px + 1vw);
+            margin-bottom: calc(30px + 1vw);
+            padding: 20px 0;
         }
 
         .features-heading {
-            font-size: 32px;
-            font-weight: bold;
-            color: #ffffff;
+            font-size: calc(30px + 1vw);
+            font-weight: 700;
+            text-align: start;
+            color: var(--myWhite);
+            font-family: georgi;
+            text-transform: capitalize;
         }
 
         .features-subtext {
@@ -67,7 +70,7 @@
         }
 
         .feature-box i {
-            color: #044ff1;
+            color: white;
             font-size: 22px;
         }
     </style>
@@ -119,7 +122,7 @@
     </section>
 
 
-    <div class="container-fluid my-5">
+    <div class="container-fluid my-3">
         <div class="container">
             <p class="main-heading">About <span style="color: #00b4d8;">Us</span></p>
             <div class="row">
@@ -145,8 +148,8 @@
     </div>
 
 
-    <div class="container my-5">
-        <p class="mb-5 main-heading">Why Choose <span style="color: #00b4d8;">iHubPay?</span></p>
+    <div class="container my-4">
+        <p class="mb-3 main-heading">Why Choose <span style="color: #00b4d8;">iHubPay?</span></p>
         <div class="row">
             <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card first-card">
@@ -193,9 +196,9 @@
     </div>
 
 
-    <div class="container my-5">
-        <p class="comp-solutions mb-4">Comprehensive <span style="color:#00b4d8">Solutions</span></p>
-        <p class="mb-5 text-white">To keep your business ahead of the rest</p>
+    <div class="container my-4">
+        <p class="comp-solutions mb-1">Comprehensive <span style="color:#00b4d8">Solutions</span></p>
+        <p class="mb-3 text-white">To keep your business ahead of the rest</p>
         <div class="row g-4">
             <div class="col-md-4 mycolumn">
                 <div class="feature-card p-4 service-box animate__animated animate__zoomIn">
@@ -277,7 +280,7 @@
 
     <section class="features-section">
         <div class="container">
-            <h2 class="features-heading">Payment Gateway Features for Growing Businesses</h2>
+            <p class="features-heading">Payment Gateway Features for<span style="color: #00b4d8;"> Growing Businesses</span></p>
             <p class="features-subtext">Experience high transaction success rate at low pricing to expand your business
                 growth.</p>
 
@@ -338,7 +341,7 @@
 
 
     <footer class="myfooter">
-        <div class="container myfooter-container my-5">
+        <div class="container myfooter-container">
             <div class="row">
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <img class="footlogo-img" src="image/logo.svg" alt="">
@@ -352,7 +355,8 @@
                     <p class="footer-heading">Contact Us</p>
                     <menu class="foot-menu">
                         <li><a href="pages/contact.html">Contact</a></li>
-                        <li><a href="mailto:help.ihubpay@gmail.com"><i class="pe-2 fa-solid fa-envelope"></i>help.ihubpay@gmail.com</a></li>
+                        <li><a href="mailto:help.ihubpay@gmail.com"><i
+                                    class="pe-2 fa-solid fa-envelope"></i>help.ihubpay@gmail.com</a></li>
                         <li><a href="tel:+918209323965"><i class="pe-2 fa-solid fa-phone"></i>8209323965</a></li>
                     </menu>
                 </div>
@@ -372,10 +376,11 @@
         <div class="container-fluid copyright-sect py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 mb-sm-5">
+                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 copyright-media">
                         <span class="copyright">&#169; iHubPay 2025, All Rights Reserved.</span>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 foot-helpline d-flex justify-content-end align-items-center">
+                    <div
+                        class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 foot-helpline d-flex justify-content-end align-items-center copyright-media2">
 
                         <a class="foot-help" href="mailto:help.ihubpay@gmail.com">Help</a>
                         <span class="foot-line">|</span>
@@ -390,13 +395,21 @@
 
 
 
-<!-- whatsbtn -->
+    <!-- whatsbtn -->
     <div class="whats-appbtn">
-        <a href="https://api.whatsapp.com/send?phone=+918209323965&text=Can%20I%20know%20more%20about%20your%20service.."  target='_blank'>
-          <i class="fa-brands fa-square-whatsapp"></i>
-       </a>
+        <a href="https://api.whatsapp.com/send?phone=+918209323965&text=Can%20I%20know%20more%20about%20your%20service.."
+            target='_blank'>
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
     </div>
 
+<!-- airo-btn -->
+    <div class="airo-topbtn">
+        <a href="#">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    
 
     <!-- wow js -->
     <script>

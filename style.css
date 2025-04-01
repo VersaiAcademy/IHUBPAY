@@ -56,7 +56,7 @@ nav{
 
 
 .payment-image{
-    /* height: calc(400px + 1vw); */
+    height: calc(350px + 10vw);
     width: 70%;
 }
 
@@ -102,7 +102,6 @@ nav{
 }
 
 .logo-img{
-    margin-top:calc(10px + 0.5vw);
     height: calc(50px + 1vw);
 }
 
@@ -245,7 +244,7 @@ nav{
 
 /* ------------Comprehensive Solutions------------- */
 .comp-solutions{
-    font-size: calc(25px + 2vw);
+    font-size: calc(30px + 1vw);
     font-weight: 700;
     font-family: georgi;
     color: var(--myWhite);
@@ -325,7 +324,10 @@ nav{
 
 
 /* footer */
+
 .myfooter-container{
+    margin-top: calc(30px + 1vw);
+    margin-bottom: calc(30px + 1vw);
     padding: calc(60px + 1vw) calc(20px + 1vw);
     border: 2px solid #0082E6;
     border-radius: 12px;
@@ -343,20 +345,34 @@ nav{
     color: var(--myWhite);
     font-size: calc(16px + 0.5vw);
     font-weight: 600;
+    position: relative;
 }
-
+.footer-heading::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 25%;
+    height: 3px; 
+    background-color:var(--accent-color); 
+  }
 
 .foot-menu{
     list-style: none;
 }
 .foot-menu li{
-    line-height: 28px;
+    line-height: calc(25px + 0.5vw);
 }
 .foot-menu li a{
     text-decoration: none;
     color: var(--myWhite);
     font-size: calc(14px + 0.1vw);
-    font-weight: 500;
+    font-weight: 400;
+}
+.foot-menu li a:hover{
+    text-decoration: underline;
+    font-size: calc(14px + 0.1vw);
+    font-weight: 400;
 }
 .copyright-sect{
     background-color: rgba(0, 0, 0, 0.2);
@@ -373,13 +389,13 @@ nav{
     font-size: calc(14px + 0.1vw);
     font-weight: 500;
     color: var(--myWhite);
-   padding-left:calc(10px + 0.5vw);
+    padding-left:calc(5px + 0.5vw);
 }
 .foot-helpline span{
     font-size: calc(14px + 0.1vw);
     font-weight: 500;
     color: var(--myWhite);
-    padding-left:calc(10px + 0.5vw);
+    padding-left:calc(5px + 0.5vw);
 }
 
 
@@ -387,12 +403,33 @@ nav{
 
 .whats-appbtn{
     position: fixed;
-    top: 80vh;
-    right: 5%;
+    top: 50vh;
+    right: 6%;
     z-index: 99999999999999;
 }
 
 .whats-appbtn i{
     font-size: calc(24px + 2vw);
     color: rgb(33, 236, 33);
+}
+
+
+ /* ------------airo-btn---------- */
+
+.airo-topbtn{
+    position: fixed;
+    top: 90vh;
+    right: 6%;
+    z-index: 99999999999999;
+}
+.airo-topbtn a{
+    display: inline-block;
+    padding: calc(5px + 0.3vw) calc(12px + 0.2vw);
+    border-radius: 50%;
+    border: 1px solid var(--myWhite);
+    z-index: 99999999999999;
+}
+.airo-topbtn i{
+    font-size: calc(14px + 0.5vw);
+    color: var(--myWhite);
 }

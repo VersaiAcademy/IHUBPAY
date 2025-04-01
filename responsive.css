@@ -21,7 +21,7 @@
 @media(max-width:768px){
     .payment-image{
         margin-top: calc(20px + 0.5vw);
-        height: calc(300px + 1vw);
+        height: calc(350px + 1vw);
     }
 }
 
@@ -44,3 +44,18 @@
 }
 }
 
+/* -------copyright-media-------- */
+
+@media(max-width:768px){
+    .copyright-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .copyright-media2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
