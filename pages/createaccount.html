@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: url('../image/bn.png');
             background-color: #022c43;
             background-size: cover;
             display: flex;
@@ -73,17 +72,23 @@
             padding-top: 20px;
             height: 80px;
             padding-left: 10%;
-            filter: brightness(0) invert(1);
+            /* filter: brightness(0) invert(1); */
+        }
+
+        @media(max-width:768px){
+            body{
+                height: 110vh;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-12 mb-sm-4">
                 <a href="../index.html"><img src="../image/logo.svg" alt="logo" class="sign-inlogo"></a>
             </div>
-            <div class="col-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12">
                 <div class="account-container">
                     <h2 class="account-title">Create Your <br> iHubPay Account</h2>
                     <p>Join the fastest growing payment gateway solution.</p>

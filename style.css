@@ -56,7 +56,7 @@ nav{
 
 
 .payment-image{
-    height: calc(500px + 1vw);
+    /* height: calc(400px + 1vw); */
     width: 70%;
 }
 
@@ -103,13 +103,13 @@ nav{
 
 .logo-img{
     margin-top:calc(10px + 0.5vw);
-    height: calc(50px + 0.5vw);
+    height: calc(50px + 1vw);
 }
 
 /* first-section */
 .hero-section {
     background: #022c43;
-    min-height: 80vh;
+    min-height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ nav{
 
 .your-trusted{
     font-size: calc(30px + 5vw);
-    line-height: calc(70px + 0.5vw);
+    line-height: calc(30px + 5vw);
     text-transform:capitalize;
     color: var(--myWhite);
     /* font-family: cinema-sunday; */
@@ -158,10 +158,11 @@ nav{
 
 
 .about-usdesc{
+    font-family: nba-rachit;
     font-size: calc(18px + 0.2vw);
     font-weight: 700;
     color: var(--myWhite);
-    
+    text-align: start;
 }
 
 
@@ -169,6 +170,7 @@ nav{
     font-size: calc(14px + 0.1vw);
     font-weight: 400;
     color: var(--dimWhite);
+    text-align: start;
     margin-top: -10px;
 }
 
@@ -188,7 +190,7 @@ nav{
 .main-heading{
     font-size: calc(30px + 1vw);
     font-weight: 700;
-    /* text-align: center; */
+    text-align: start;
     color: var(--myWhite);
     font-family: georgi;
     text-transform: capitalize;
@@ -199,7 +201,7 @@ nav{
 }
 
 /* ------------------for both card section-------------------  */
-.card:hover {
+.first-card:hover {
     animation: pulse; /* Animate.css effect */
     animation-duration: 1s;
 }
@@ -230,17 +232,25 @@ nav{
 }
 .card-imagechild{
     width: 100%;
-    height: calc(150px + 1vw);
+    height: calc(180px + 1vw);
 }
 
 .card-description1{
     font-size: calc(14px + 0.1vw);
     color: #111;
+    text-align: center;
     font-weight: 400; 
 }
 
 
 /* ------------Comprehensive Solutions------------- */
+.comp-solutions{
+    font-size: calc(25px + 2vw);
+    font-weight: 700;
+    font-family: georgi;
+    color: var(--myWhite);
+    text-transform: capitalize;
+}
 .feature-card {
     padding: 20px;
     background: var(--myWhite);
@@ -265,23 +275,19 @@ nav{
 .track-fast{
             background: rgba(0, 0, 0, 0.2);
     /* background:linear-gradient(to right, rgba(255,0,0,0), rgb(56, 56, 219)); */
-    padding: calc(20px + 0.1vw) 0px;
 }
 .phone-seamless{
-    height: calc(400px + 2vw);
+    height: calc(500px + 5vw);
 }
-.phone-seamless:hover{
-    /* background: rgba(255, 255, 255, 0.2); */
-        /* background: rgba(0, 183, 255, 0.5); */
-        transform: translateY(-8px);
-        box-shadow: 0 6px 15px rgba(10, 138, 189, 0.7);
-        animation: pulse 1s;
+.phone-seamless:hover {
+    animation: zoomIn 0.5s;
+    transform: scale(1.2);
 }
 .get-onboard{
     font-size: calc(20px + 0.6vw);
     font-weight: 600;
     color: var(--myWhite);
-    text-align: start;
+    /* text-align: start; */
 }
 .get-menu{
     list-style: none;
@@ -328,7 +334,7 @@ nav{
     height: calc(50px + 0.1vw);
 }
 .footlogo-desc{
-    padding-top:calc(20px + 0.5vw);
+    padding-top:calc(10px + 0.2vw);
     color: var(--myWhite);
     font-size: calc(14px + 0.1vw);
     font-weight: 500;
@@ -382,7 +388,7 @@ nav{
 .whats-appbtn{
     position: fixed;
     top: 80vh;
-    right: 2%;
+    right: 5%;
     z-index: 99999999999999;
 }
 

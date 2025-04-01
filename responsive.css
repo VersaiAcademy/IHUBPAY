@@ -17,3 +17,30 @@
 .mycolumn:hover{
 
 }
+/* hero-section */
+@media(max-width:768px){
+    .payment-image{
+        margin-top: calc(20px + 0.5vw);
+        height: calc(300px + 1vw);
+    }
+}
+
+/* index - seamless */
+@media(max-width:768px){
+    .phone-seamless{
+        height: calc(300px + 1vw);
+    }
+}
+
+
+/* get-onboard */
+@media(max-width:768px){
+.get-onboard, .get-menu{
+    margin-left: 10px;
+}
+.learn-morebtn{
+    display: inline-block;
+    margin-left: 10px;
+}
+}
+

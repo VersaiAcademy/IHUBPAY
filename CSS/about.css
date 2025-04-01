@@ -40,7 +40,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .about-section {
-    text-align: center;
+    /* text-align: center; */
     padding: 80px 0;
 }
 .about-box {
@@ -52,23 +52,23 @@ body {
 }
 .about-box:hover {
     transform: translateY(-8px);
-    box-shadow: 0 6px 15px rgba(0, 183, 255, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 183, 255, 0.7);
 }
 .cta-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #00b7ff;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
+    background: var(--primary-color);
+    margin-top: calc(10px + 0.5vw);
     text-decoration: none;
-    transition: 0.3s;
+    color: var(--myWhite);
+    padding: 10px 15px;
+    /* border: 2px solid var(--myWhite); */
+    border-radius: 12px;
+    font-size: calc(14px + 0.2vw);
+    font-weight: 500;
 }
 .cta-button:hover {
     background: #0085cc;
-    box-shadow: 0 0 10px #00b7ff;
+    box-shadow: 0 0 6px var(--primary-color);
 }
 
 .team-member {
@@ -137,13 +137,14 @@ body {
     border: 2px solid var(--primary-color);
 }
 
-.card-carousel{
+/* .card-carousel{
     display: flex;
     justify-content: center;
-}
+} */
 .award-title{
     font-size: calc(16px + 0.1vw);
     font-weight: 600;
+    text-align: center;
     color: var(--myWhite);
 }
 .award-desc{
