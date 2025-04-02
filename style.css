@@ -403,8 +403,8 @@ nav{
 
 .whats-appbtn{
     position: fixed;
-    top: 50vh;
-    right: 6%;
+    top: 90vh;
+    right: 1%;
     z-index: 99999999999999;
 }
 

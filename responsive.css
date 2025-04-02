@@ -59,3 +59,24 @@
         align-items: center;
     }
 }
+
+
+
+
+
+/* _____________whatsapp btn______________ */
+
+@media(max-width:768px){
+    .whats-appbtn{
+        position: fixed;
+        top: 80vh;
+        right: 7%;
+        z-index: 99999999999999;
+    }
+    
+    .whats-appbtn i{
+        font-size: calc(24px + 2vw);
+        color: rgb(33, 236, 33);
+    }
+    
+}
